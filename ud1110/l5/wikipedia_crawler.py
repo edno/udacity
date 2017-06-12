@@ -40,6 +40,7 @@ def continue_crawl(search_history, target_url, max_steps=25):
         return False
     elif search_history[-1] in search_history[:-1]:
         print('Search falls into a cycle')
+        return False
     else:
         return True
 
