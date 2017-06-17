@@ -30,7 +30,6 @@ def naked_twins(values):
     twins_list = []
     for box in boxes:
         if len(values[box]) == 2:
-            v = values[box]
             for peer in peers[box]:
                 if values[peer] == values[box]:
                     twins_list.append([box,peer])
