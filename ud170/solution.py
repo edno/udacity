@@ -150,10 +150,11 @@ for rec in submission_paid:
         pass_subway_project.add(rec['account_key'])
 
 print(len(pass_subway_project))
+print(len(non_pass_subway_project))
 
 passing_engagement = []
 non_passing_engagement = []
-for rec in paid_engagement_in_first_week:
+for rec in engagement_paid:
     if rec['account_key'] in pass_subway_project:
         passing_engagement.append(rec)
     else:
